@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A bare-bones TikTok metrics generator that allows anyone to see a TikTok user’s performance metrics.
+
+This was bootstrapped with Next, TypeScript, Tailwind CSS and Figma Design file.
 
 ## Getting Started
 
