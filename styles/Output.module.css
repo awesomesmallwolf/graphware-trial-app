@@ -1,0 +1,51 @@
+.container {
+  @apply flex justify-center mt-88;
+}
+
+.main {
+  @apply px-20 max-w-screen-sm w-full;
+}
+
+.header {
+  @apply mb-48;
+}
+
+.sub_header {
+  @apply text-subheader font-semibold text-medium;
+}
+
+.title {
+  @apply text-heading2 font-semibold mb-12;
+}
+
+.user_info {
+  @apply py-6 pl-12 pr-8 border border-outline-light rounded-32 flex flex-1 w-max;
+}
+
+.user_info span {
+  @apply font-semibold text-subheader;
+}
+
+.user_info img {
+  @apply w-24 h-24 rounded-full mr-8;
+}
+
+.data_container {
+  @apply md:rounded-12 md:border-x border-y border-outline-light md:px-32 py-24;
+}
+
+.data {
+  @apply overflow-hidden box-content grid grid-cols-2 md:grid-cols-3;
+}
+
+.data li {
+  @apply -m-1 border-r border-outline-light my-16 px-16;
+}
+
+.data li h3 {
+  @apply font-semibold text-caption1 text-medium;
+}
+
+.data li div {
+  @apply font-semibold text-heading1 text-dark;
+}

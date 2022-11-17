@@ -1,129 +1,65 @@
 .container {
-  padding: 0 2rem;
+  @apply flex flex-col items-center;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  @apply px-20 max-w-screen-sm w-full flex flex-1 flex-col justify-center items-center;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  @apply text-display5 md:text-display3 font-semibold mt-136 mb-24;
 }
 
 .title,
 .description {
-  text-align: center;
+  @apply text-center;
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  @apply text-title text-medium mb-32;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.form {
+  @apply w-full font-semibold;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.form_group {
+  @apply mb-24;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.input_group {
+  @apply flex items-center shadow-7.5;
+  @apply bg-white border border-outline-light rounded-16 w-full h-64 px-24;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.prefix {
+  @apply text-dark;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.input {
+  @apply outline-none grow;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.invalid .input {
+  @apply text-danger-700;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.invalid .input_group {
+  @apply border-danger-500 shadow-focus-danger;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.input::placeholder {
+  @apply text-disabled;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.error {
+  @apply text-danger-700 font-semibold py-8 text-sm;
+}
+
+.button {
+  @apply px-16 rounded-8 outline-1 w-full h-48 text-sm bg-primary-700 text-white;
+}
+
+.button:disabled {
+  @apply text-disabled border border-outline-light bg-outline-xlight;
 }
